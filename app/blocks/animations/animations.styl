@@ -1,0 +1,32 @@
+@keyframes right {
+from {
+  transform: translateX(15px);
+}
+50% {
+  transform: translateX(100vw) translateX(-100%) translateX(-30px);
+}
+to {
+  transform: translateX(15px);
+}
+}
+.animation-right
+  display flex
+  animation: right 200000ms infinite;
+  @media only screen and (min-width: sm)
+    animation: right 150000ms infinite;
+  @media only screen and (min-width: md)
+    animation: right 120000ms infinite;
+.animation-box
+  display flex
+@keyframes opacity {
+from {
+  opacity: 0; 
+}
+to {
+  opacity: 1;
+}
+}
+.animation-opacity
+  animation: opacity 1000ms;
+.animation-opacity-0
+  opacity 0;

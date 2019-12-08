@@ -1,0 +1,30 @@
+.memories__img
+  max-height 400px
+  max-width 200px
+  height auto
+  width auto
+  filter: grayscale(100%);
+  margin 0 auto
+  display: block;
+  margin-bottom 30px
+  @media only screen and (min-width: xs)
+    max-width 280px
+  @media only screen and (min-width: sm)
+    margin-bottom 15px
+  @media only screen and (min-width: md)
+    max-height 400px
+    max-width 400px
+.memories__one:hover
+  .memories__img  
+    filter none
+.memories__one:nth-child(even)
+  .memories__img
+    @media only screen and (min-width: sm)
+      margin-right 60px
+      float left
+.memories__one:nth-child(odd)
+  .memories__img
+    @media only screen and (min-width: sm)
+      margin-left 60px
+      float right
+  

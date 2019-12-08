@@ -1,0 +1,32 @@
+.section__title
+  position relative
+  width calc(100% - 30px)
+  margin 0
+  text-align center
+  @media only screen and (min-width: sm)
+    height 50px
+    margin 50px 0
+  @media only screen and (min-width: lg)
+    width 1200px
+    margin 50px auto
+  h1
+    font-size titleSize
+    font-family titleFont
+    padding 0 15px
+    color grayColor
+    background lightColor
+    @media only screen and (min-width: sm)
+      position absolute
+      transform translateX(-50%)
+      left 50%
+      margin-top 0
+      height 50px
+.section__title:before
+  @media only screen and (min-width: sm)
+    position absolute
+    top 24px
+    right 30px
+    left 30px
+    content ""
+    height 2px
+    background grayColor

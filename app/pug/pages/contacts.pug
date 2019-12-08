@@ -1,0 +1,25 @@
+extends ../layouts/default.pug
+
+block site__content
+  section.section
+    .section__title
+      h1 Contacts
+    .section__content_type_row.contacts
+      .section__half
+        .contacts__box
+          h2.contacts__subtitle Phone number:
+            span &nbsp;
+            span.contacts__text 07440 040789
+          h2.contacts__subtitle E-mail:
+            span &nbsp;
+            span.contacts__text masf.foundation@gmail.com
+      .section__half
+        form.form
+          input.form__input(type='text', placeholder='Name')
+          br
+          input.form__input(type='email', placeholder='E-mail')
+          br
+          input.form__input(type='tel', placeholder='Tel')
+          br
+          textarea.form__input(rows="10", placeholder='Message')
+          button.form__button(type='submit') Send

@@ -1,0 +1,37 @@
+.e-books__one
+  margin 20px
+  color baseColor
+  text-decoration none
+  padding 20px
+  border-radius 5px
+  background lightGrayColor
+  box-shadow 0 0 10px 1px baseOverlay
+  width 250px
+  position relative
+.e-books__one:hover
+  color baseColor
+  background pinkColor
+  box-shadow 0 0 10px 1px headerOverlay
+  .e-books__shadow
+    background linear-gradient(to top, rgba(239, 229, 212, 1), rgba(239, 229, 212, 0));
+.e-books__one.e-books__one_type_open
+  background pinkColor
+  box-shadow 0 0 10px 1px headerOverlay
+  position absolute 
+  z-index 1 
+  width calc(100% - 30px)
+  margin-right: auto;
+  margin-left: auto;
+  @media only screen and (min-width: lg)
+    width containerWidth
+  .e-books__preview
+    min-height 180px
+    height auto
+  .e-books__shadow
+    display none
+  .e-books__detailed 
+    display none
+  .e-books__close
+    display block
+  
+  

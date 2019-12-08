@@ -1,0 +1,36 @@
+extends ../layouts/default.pug
+
+block site__content
+  section.section
+    .section__title
+      h1 Life in pictures
+    .section__content_type_row.photogallery
+      .photogallery__one
+        img.photogallery__img(src='assets/images/1907xxMother.jpg' date="22 сентября 2001" description="testtestststst" item="1")
+      .photogallery__one
+        img.photogallery__img(src='assets/images/main-02.jpg' date="25 сентября 2001" description="t" item="2")
+      .photogallery__one
+        img.photogallery__img(src='assets/images/main-03.jpg' item="3")
+      .photogallery__one
+        img.photogallery__img(src='assets/images/main-04.jpg' item="4")
+      .photogallery__one
+        img.photogallery__img(src='assets/images/main-05.jpg' item="5")
+      .photogallery__one
+        img.photogallery__img(src='assets/images/main-06.jpg' item="6")
+      .photogallery__one
+        img.photogallery__img(src='assets/images/main-07.jpg' item="7")
+      .photogallery__one
+        img.photogallery__img(src='assets/images/main-08.jpg' item="8")
+      .photogallery__one
+        img.photogallery__img(src='assets/images/main-09.jpg' item="9")
+      .photogallery__one
+        img.photogallery__img(src='assets/images/main-10.jpg' item="10")
+      .photogallery__full.hidden
+        .photogallery__box
+          .photogallery__close &times;
+          .photogallery__arrow-left#arrow-left &laquo;
+          .photogallery__arrow-right#arrow-right &raquo;
+          img#photo-full(src='')
+          h2#date-full
+          p#description-full
+    

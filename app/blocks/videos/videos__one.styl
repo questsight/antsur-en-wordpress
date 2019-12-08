@@ -1,0 +1,30 @@
+.videos__one
+  margin 20px 30px
+  width 320px
+  text-decoration none
+  color grayColor 
+  font-family titleItalicFont
+  position relative
+.videos__play
+  position absolute
+  width 60px
+  height 40px
+  background baseOverlay
+  color lightColor
+  transform translateX(-50%)
+  top 12vw
+  left 50%
+  border-radius 10px
+  @media only screen and (min-width: xs)
+    top 75px
+.videos__play:after
+  content ""
+  position: absolute;
+  left 23px
+  top 10px
+  border: 10px solid transparent;
+  border-left: 20px solid lightColor;
+.videos__one:hover
+  .videos__play
+    background #F9251C
+  
