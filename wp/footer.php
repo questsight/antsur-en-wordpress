@@ -8,6 +8,12 @@
           <p>© <?php echo get_bloginfo('name'); ?> <?php echo get_bloginfo('description'); ?></p>
         </div>
       </footer>
+      <div class="popup hidden" id="callback">
+        <div class="popup__content">
+          <div class="popup__exit">&#10006;</div>
+          <?php echo do_shortcode('[contact-form-7 id="712" title="Event"]'); ?>
+        </div>
+      </div>
     </div>
     <?php wp_footer(); ?>
   </body>
