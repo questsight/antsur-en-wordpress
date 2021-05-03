@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <?php
-if(in_category(5) || in_category(7)) {
+if(in_category(5) || in_category(7) || in_category(10) || in_category(11) || in_category(12) || in_category(13)) {
 include 'single-text.php';
-} else if(in_category(6)) {
+} else if(in_category(6) || in_category(14)) {
 include 'single-video.php';
 } else if(in_category(8)) {
 include 'single-event.php';

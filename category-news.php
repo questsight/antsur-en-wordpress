@@ -10,9 +10,9 @@
                 <img class="memories__img" src="<?php echo CFS()->get( 'photo' ); ?>" alt="<?php the_title(); ?>">
               </picture>
               <h2 class="memories__author"><?php the_title(); ?></h2>
-              <h3 class="memories__name"><?php echo CFS()->get( 'header' ); ?></h3>
+              <h3 class="memories__name"></h3>
               <div class="memories__date"><?php echo CFS()->get( 'subtitle' ); ?></div>
-              <div class="memories__preview"><?php echo CFS()->get( 'preview' ); ?></div>
+              <div class="memories__preview"><?php the_excerpt(); ?></div>
             </a>
           <?php endwhile; endif; ?>  
           </div>
